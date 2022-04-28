@@ -1,0 +1,174 @@
+@media screen and  (max-width:1200px)
+{
+    html,body
+    {
+        font-size:14px;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and  (max-width:1024px)
+{
+    html,body
+    {
+        font-size:12px;
+        overflow-x: hidden;
+    }
+    .logo_img {
+        width: 70px;
+        padding-top: 6px;
+    }
+    .sidebar
+    {
+        height: 60px;
+        width:100%;
+    }
+    .about-section
+    {
+        width:100%;
+        margin-bottom: 170px;
+    }
+    .about-section_img img {
+        margin-left:0;
+        width:87%;
+    }
+
+
+    .row2,.roww
+    {
+        width:95%;
+    }
+
+
+    /*  profile section */
+
+    #ship-img
+    {
+        width:7rem;
+    }
+    #riyada-img
+    {
+        width: 15rem;
+    }
+    .contact-form
+    {
+        width:38%;
+    }
+    .rowww {
+        width: 67%;
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    html,body
+    {
+        font-size: 10px;
+    }
+    .first_box,.second_box
+    {
+        display: block;
+    }
+    .card
+    {
+        width:80%;
+        margin:auto;
+    }
+    .card2
+    {
+        margin-top: 50px;;
+    }
+    .about-section_img img 
+    {
+        margin-top:60px;
+    }
+    .about-section_para
+    {
+        font-size:1.1rem;
+    }
+    .roww
+    {
+        width:70%;
+    }
+    .col-4
+    {
+        min-width: 250px;
+    }
+
+    /*  profile section */
+
+    #ship-img
+    {
+        width:5rem;
+    }
+    #riyada-img
+    {
+        width: 13rem;
+    }
+    .contact-form
+    {
+        width:48%;
+    }
+    .contact_heading
+    {
+        padding-bottom: 40px;
+    }
+    .rowww {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:425px)
+{
+    header .heading h1 {
+        font-size: 2rem;
+    }
+    .logo_img {
+        width: 71px;
+        padding-top: 6px;
+    }
+    .about-section
+    {
+        margin-top: 100px;
+        flex-wrap: wrap-reverse;
+        margin-bottom: 100px;
+    }
+    .about-section_para,.about-section_img 
+    {
+        width: 100%;
+    }
+    .about-section_para
+    {
+        margin-top: 100px;
+    }
+    .about-section_img
+    {
+        position: relative;
+    }
+    .about-section_img img 
+    {
+        width:80%;
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        top:-200px;
+    }
+    .col-4
+    {
+        min-width: 300px;
+    }
+    /*    profile section   */
+    .profile_section div {
+        width: 85%;
+    }
+    .contact-form
+    {
+        width:70%;
+    }
+    .address_card, .number_card, .email_card {
+        width: 80.33%;
+        height: 180px;
+        padding: 0px 60px;
+    }
+}
