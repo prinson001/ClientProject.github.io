@@ -71,7 +71,7 @@ header .heading h3{
   background-color: black;
   display: flex;
   align-items:center;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   color:white;
 }
 /* **************************NAVBAR ********************/
@@ -97,7 +97,7 @@ header .heading h3{
     display: flex;
     max-width: calc(100% - 200px);
     margin: 0 auto;
-    height: 70px;
+    height: 65px;
     align-items: center;
     justify-content: space-between;
   }
@@ -554,14 +554,14 @@ header .heading h3{
     text-align: center;
     font-size:1.3rem;
     font-weight:400;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .address_card,.number_card,.email_card
 {
     width:33.33%;
     text-align:center;
-    height:300px;
-    padding:20px 60px;
+    min-height:300px;
+    padding:0px 60px;
 }
 /************** FOOTER *****************/
 

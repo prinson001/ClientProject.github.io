@@ -63,7 +63,7 @@
 {
     html,body
     {
-        font-size: 10px;
+        font-size: 11px;
     }
     .first_box,.second_box
     {
@@ -121,26 +121,44 @@
 
 @media screen and (max-width:425px)
 {
+    p
+    {
+        font-size:14px;
+    }
     header .heading h1 {
         font-size: 2rem;
     }
     .logo_img {
-        width: 71px;
-        padding-top: 6px;
+        width: 60px;
+        padding-top: 10px;
     }
+    .wrappers nav
+    {
+        height:60px;
+    }
+
+    nav .content .links {
+        top:73px;
+    }
+
     .about-section
     {
-        margin-top: 100px;
+        margin-top: 250px;
         flex-wrap: wrap-reverse;
         margin-bottom: 100px;
     }
+    .about-section h3
+    {
+        margin-top: 120px;
+    }
+    
     .about-section_para,.about-section_img 
     {
         width: 100%;
     }
     .about-section_para
     {
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .about-section_img
     {
@@ -152,15 +170,21 @@
         position: absolute;
         left:50%;
         transform: translateX(-50%);
-        top:-200px;
+        top:-160px;
     }
     .col-4
     {
         min-width: 300px;
     }
-    /*    profile section   */
     .profile_section div {
-        width: 85%;
+        width: 93%;
+    }
+    .profile_section-h2 {
+        text-align: center;
+        margin-top: 30px;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0 10px;
     }
     .contact-form
     {
@@ -168,7 +192,9 @@
     }
     .address_card, .number_card, .email_card {
         width: 80.33%;
+        margin-top:10px;
         height: 180px;
-        padding: 0px 60px;
+        padding: 5px 60px;
+        border-top: 1px solid red;
     }
 }
