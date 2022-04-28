@@ -22,15 +22,53 @@
         padding: 0;
         font-family: 'Roboto', sans-serif;
         background-color: #f5f5f5;
+        position: relative;
     }
     header
     {
         height:100vh;
         width:100vw;
-        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("resources/css/images/ant-rozetsky-SLIFI67jv5k-unsplash.jpg");
         background-position: center;
         background-size: cover;
         margin-bottom: 30px;
+        overflow-x:hidden ;
+    }
+    .header-box{
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform: translate(-50%,-50%);
+      width:100%;
+    }
+    a{
+      text-decoration: none;
+    }
+    .btn
+    {
+      width:7rem;
+      height:2rem;
+      background-color: red;
+      color:white;
+      border-radius: 20px;
+      border:none;
+      outline:none;
+      display: block;
+      margin: 20px auto;
+    }
+    .btn:hover
+    {
+      cursor: pointer;
+      background-color: rgb(233, 52, 52);
+    }
+    .header-box h1{
+      font-size: 3rem;
+      text-align:center;
+      line-height: 1.7;
+      letter-spacing: 5px;
+      font-weight: 500;
+      color:white;
+      text-transform: uppercase;
+      transition: text-shadow,margin-bottom .3s ease-out;
     }
     .category
     {
@@ -198,6 +236,10 @@
 
 @media screen and (max-width:425px)
 {
+    .logo_img {
+      width: 60px;
+      padding-top: 10px;
+      }
     .first_box,.second_box,.middle_box
     {
         display: block;
@@ -226,7 +268,8 @@
     background: #171c24;
     position: fixed;
     width: 100%;
-    z-index:10;
+    z-index: 10;
+  
   }
   .wrappers a
   {
@@ -290,10 +333,7 @@
   .wrappers input[type="checkbox"]{
     display: none;
   }
-  .logo_img
-  {
-    width: 85px;
-  }
+
   /* Dropdown Menu code start */
   .content .links ul{
     position: absolute;
@@ -419,3 +459,25 @@
       text-decoration: none;
       color:black;
   }
+
+
+
+  .logo_img {
+    width: 75px;
+    height: auto;
+    padding-top: 3px;
+  }
+
+  .quick_info
+{
+  width:100%;
+  background-color: black;
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+  color:white;
+}
+  .sticky
+{
+  top:0;
+}

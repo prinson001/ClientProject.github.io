@@ -138,7 +138,7 @@
     }
 
     nav .content .links {
-        top:73px;
+        top:76px;
     }
 
     .about-section
@@ -188,7 +188,7 @@
     }
     .contact-form
     {
-        width:70%;
+        width:75%;
     }
     .address_card, .number_card, .email_card {
         width: 80.33%;
@@ -196,5 +196,41 @@
         height: 180px;
         padding: 5px 60px;
         border-top: 1px solid red;
+    }
+}
+
+@media screen and (max-width:375px)
+{
+    .about-section
+    {
+        margin-top: 300px;
+    }
+    .profile_section div {
+        width: 98%;
+    }
+    #riyada-img {
+        width: 11rem;
+    }
+}
+@media screen and (max-width:320px)
+{
+ 
+    .about-section_para {
+        padding: 0px 34px;
+    }
+    .profile_section div {
+        width: 100%;
+    }
+    .profile_section div h3
+    {
+        width:44%;
+    }
+    .profile_section-info {
+        width: 91%;
+    }
+    .address_card, .number_card, .email_card {
+        width: 97.33%;
+        padding: 5px 45px;
+        min-height: 236px;
     }
 }
