@@ -18,9 +18,17 @@ html ,body{
     font-family: 'Roboto', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: .25vw;
+}
 
-
-
+body::-webkit-scrollbar-thumb {
+background-color: red;
+}
+body::-webkit-scrollbar-track
+{
+  background-color: black;
+}
 
 
 
@@ -68,11 +76,28 @@ header .heading h3{
 .quick_info
 {
   width:100%;
-  background-color: black;
+  background-color:rgba(0,0,0,0.7);
   display: flex;
   align-items:center;
   justify-content: space-evenly;
   color:white;
+  font-size: 14px;
+}
+.quick_info div:first-child
+{
+  width:70%;
+}
+.quick_info div:last-child
+{
+  width:20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+.quick_info i
+{
+  margin-right: 6px;
 }
 /* **************************NAVBAR ********************/
 
@@ -284,7 +309,7 @@ header .heading h3{
     display: flex;
     flex-direction: row;
     padding-top:150px;
-    margin-bottom: 250px;
+    margin-bottom: 170px;
     width: 1200px;
 }
 .about-section_para,
@@ -313,29 +338,150 @@ header .heading h3{
     text-transform: uppercase;
     margin-bottom: 25px;
 }
-
-
-
-/*************************company section *****************************/
-.row2 {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    align-items: center;
-    margin: auto;
-}
-.first_box,
-.second_box
+/*****************************  VISION MISSION SECTION ****************/
+.vision_mission-section
 {
-    display: flex;
-    justify-content: space-around;
-    width:50%;
+  background-color: #f5f5f5;
+  height:auto;
+  padding: 100px 0;
+  
 }
-.company_section
-{
-    padding:60px 0;
-    background-color: #f4f4f4;
-}
+.company-goals{
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  margin:0px auto;
+  width:70%;
+  height: 600px;
+  }
+
+  /*  color #80ccff 
+      #0086b3
+      #99cc00*/
+  .card-1
+  {
+      background-color:#80ccff  ;
+      transform: perspective(600px) rotateY(-5deg);
+      box-shadow: 5px 5px 15px rgba(0,0,0,.5);
+  }
+  .card-1:hover,.card-3:hover
+  {
+      transform: translateY(-10px) scale(1.1);
+      box-shadow: 5px 5px 40px rgba(0,0,0,.5);
+  }
+  .card-2
+  {
+      background-color:#0086b3  ;
+      transform: translateY(-10px) scale(1.1);
+      box-shadow: 5px 5px 40px rgba(0,0,0,.5);
+  }
+  .card-3
+  {
+      background-color:#99cc00  ;
+      transform: perspective(600px) rotateY(5deg);
+      box-shadow: -5px 5px 15px rgba(0,0,0,.5);
+  }
+  .card-1,.card-2,.card-3
+  {
+      width: 30%;
+      height:500px;
+      padding:20px;
+      transition: all .5s ease-out;
+
+  }
+  .card-h1,.card-para
+  {
+      color:white;
+  }
+  .card-h1
+  {
+      margin-top: 25px;
+      font-size: 2rem;
+      text-transform: uppercase;
+      align-items: center;
+      text-align: center;
+  }
+  .card-para
+  {
+      margin-top: 2.5rem;
+      padding: 0 15px;
+      font-size: 1.3rem;
+      text-align: center;
+  }
+  .cards
+  {
+      position: relative;
+  }
+  .cards i
+  {
+      position: absolute;
+      bottom:2rem;
+      right:2rem;
+      font-size: 8rem;
+      color:rgb(221, 94, 94);
+  }
+
+
+  @media  screen  and (max-width:1024px)
+  {
+      .company-goals
+      {
+          width: 96%;
+      }
+  }
+  @media screen and (max-width:768px)
+  {
+      .vision_mission-section
+      {
+        height: 1800px;
+      }
+      .card-1,.card-2,.card-3
+      {
+          width:51%;
+          margin-top: 30px;
+          height:400px;
+          transform: rotate(0);
+      }
+      .card-2:hover
+      {
+          transform: translateY(-10px) scale(1.1);
+          box-shadow: 5px 5px 40px rgba(0,0,0,.5);
+      }
+  }
+  @media screen and (max-width:425px)
+  {
+      .card-1,.card-2,.card-3
+      {
+          width:80%;
+          margin-top: 40px;
+      }
+  }
+  @media screen and (max-width:375px)
+  {
+      .card-1,.card-2,.card-3
+      {
+          width:90%;
+          margin-top: 30px;
+      }
+  }
+  @media screen and (max-width:325px)
+  {
+      .card-1,.card-2,.card-3
+      {
+          width:98%;
+          margin-top: 30px;
+      }
+  .card-1:hover,.card-2:hover,.card-3:hover
+  {
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 5px 5px 40px rgba(0,0,0,.5);
+  }
+  
+  }
+
+
+/*************************  SECTION PROFILE *************************/
 .company_heading,.contact_heading
 {
     text-align:center;
@@ -353,83 +499,6 @@ header .heading h3{
     margin:30px auto;
     transform: translateY(0);
 }
-
-.card_content
-{
-    width:100%;
-    padding:10px 50px ;
-}
-.card:hover
-{
-    box-shadow: 1px 1px 15px  rgba(0,0,0,0.3);
-    transform: translateY(-2px);
-}
-
-.card_heading
-{
-    text-align: center;
-    text-transform: uppercase;
-    font-size:1.3rem;
-    font-weight: 400;
-    color:black;
-    height:50px;
-}
-.card_img
-{
-    height:130px;
-}
-.card_img:after
-{
-    content:" ";
-    display: block;
-    height:2px;
-    width:70%;
-    background-color: red;
-    margin:0 auto;
-}
-.card_img-logo
-{
-    width:100%;
-    text-align: center;
-}
-.card_para
-{
-    text-align: center;
-    color:#555;
-    height:100px;
-    margin-top: 30px;
-}
-
-
-
-.roww{
-    display: flex;
-    align-items: center;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    margin: auto;
-    width:80%;
-}
-.col-4{
-    flex-basis:23.5%;
-    padding:10px;
-    min-width: 200px;
-    margin-bottom: 50px;
-    transition: transform 0.5s;
-    background-color: white;
-    border-top: 2px solid red;
-    border-radius: 8px;
-    box-shadow: 0.5px 0.5px 3px rgba(0,0,0,0.3);
-}
-.col-4:hover
-{
-    box-shadow: 1px 1px 15px  rgba(0,0,0,0.3);
-    transform: translateY(-2px);
-}
-
-
-
-/*************************  SECTION PROFILE *************************/
 
 .profile_section
 {
@@ -568,7 +637,37 @@ header .heading h3{
 footer
 {
     background-color: #333;
-    padding-bottom: 30px;
+    padding: 30px 0;
+}
+.footer-links
+{
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width:80%;
+}
+.quick-links,.social-links
+{
+  list-style: none;
+  margin-bottom: 10px;
+}
+.quick-links li , .social-links li
+{
+  display: inline-block;
+  color:#888;
+  margin-right: 10px;
+}
+.quick-links li a , .social-links li a
+{
+  text-decoration: none;
+  color: #888;
+}
+.quick-links li a:hover , .social-links li a:hover
+{
+  color:white;
 }
 footer p
 {
@@ -577,3 +676,103 @@ footer p
     font-size: 0.9rem;
     padding-top:50px;
 }
+
+
+
+/*************** CARDS HTML ************************/
+
+
+
+.first_box,
+.second_box
+{
+  display: flex;
+  justify-content: space-around;
+  width:50%;
+}
+.company_section
+{
+  padding:100px 0;
+  background-color: #f4f4f4;
+}
+.company_heading,.contact_heading
+{
+  text-align:center;
+  font-size:1.9rem;
+  text-transform: uppercase;
+  padding-bottom:100px;
+}
+.company_heading:after,.contact_heading:after
+{
+  display:block;
+  height:2px;
+  width:150px;
+  background-color:red;
+  content:" ";
+  margin:30px auto;
+  transform: translateY(0);
+}
+
+.card_content
+{
+  width:100%;
+  padding:10px 50px ;
+}
+.card:hover
+{
+  box-shadow: 1px 1px 15px  rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+
+.card_heading
+{
+  text-align: center;
+  text-transform: uppercase;
+  font-size:1.3rem;
+  font-weight: 400;
+  color:black;
+  height:50px;
+}
+.card_img
+{
+  height:130px;
+}
+.card_img:after
+{
+  content:" ";
+  display: block;
+  height:2px;
+  width:70%;
+  background-color: red;
+  margin:0 auto;
+}
+.card_img-logo
+{
+  width:100%;
+  text-align: center;
+}
+.roww{
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  margin: auto;
+  width:80%;
+}
+.col-4{
+  flex-basis:23.5%;
+  padding:10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+  background-color: white;
+  border-top: 2px solid red;
+  border-radius: 8px;
+  box-shadow: 0.5px 0.5px 3px rgba(0,0,0,0.3);
+}
+.col-4:hover
+{
+  box-shadow: 1px 1px 15px  rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+

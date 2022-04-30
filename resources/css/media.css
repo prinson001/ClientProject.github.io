@@ -18,6 +18,12 @@
         width: 70px;
         padding-top: 6px;
     }
+    .quick_info div:first-child {
+        width: 50%;
+    }
+    .quick_info div:last-child {
+        width: 40%;
+    }
     .sidebar
     {
         height: 60px;
@@ -125,6 +131,13 @@
     {
         font-size:14px;
     }
+    .quick_info div:first-child {
+        width: 20%;
+    }
+    .quick_info div:last-child {
+        width: 70%;
+        font-size: 1rem ;
+    }
     header .heading h1 {
         font-size: 2rem;
     }
@@ -197,10 +210,26 @@
         padding: 5px 60px;
         border-top: 1px solid red;
     }
+    .quick-links,.social-links
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-links
+    {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width:375px)
 {
+    .quick_info div:first-child {
+        width: 10%;
+    }
+    .quick_info div:last-child {
+        width: 80%;
+    }
     .about-section
     {
         margin-top: 300px;
@@ -214,7 +243,9 @@
 }
 @media screen and (max-width:320px)
 {
- 
+    .quick_info div:last-child {
+        width: 100%;
+    }
     .about-section_para {
         padding: 0px 34px;
     }
